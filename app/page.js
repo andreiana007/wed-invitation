@@ -97,7 +97,7 @@ export default function Page() {
     fontWeight: 700,
     letterSpacing: "0.1em",
     background: "rgba(255,255,255,0.9)",
-    textAlign: "center",
+  
   }}
 >
   Important
