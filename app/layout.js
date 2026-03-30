@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
           minHeight: "100vh",
           fontFamily: "'Courier Prime', monospace",
           fontWeight: 700,
-          background: "#0b1f44",
+          background: "linear-gradient(135deg, #f3f0ff, #eef6ff)",
         }}
       >
         {children}
