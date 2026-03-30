@@ -88,7 +88,7 @@ export default function Important() {
           </p>
 
           <a
-            href="https://www.austrian.com/at/en/gift-card"
+            href="https://www.austrian.com/ca/en/book/flights/giftvoucher"
             target="_blank"
             rel="noreferrer"
             style={{
