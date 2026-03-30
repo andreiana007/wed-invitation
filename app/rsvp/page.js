@@ -41,7 +41,7 @@ export default function RSVP() {
             fontWeight: 600,
           }}
         >
-          Vă rugăm să confirmați prezența prin formular.
+          Spune-ne daca vii, pls!
         </div>
 
         <a
@@ -60,7 +60,7 @@ export default function RSVP() {
             letterSpacing: "0.08em",
           }}
         >
-          Completează formularul
+          Aici e perfect!
         </a>
       </div>
     </div>
