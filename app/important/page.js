@@ -32,69 +32,55 @@ export default function Important() {
           Important
         </h1>
 
-        <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
-          Vă salutăm pe toți și vă mulțumim că sunteți prietenii noștri.
-        </div>
+       <div style={{ lineHeight: "1.8" }}>
+  <p>
+    Vă salutăm pe toți și vă mulțumim că sunteți prietenii noștri și că vom fi împreună pe 6 iunie.
+  </p>
 
-        <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
-          Așa cum spuneam, este de ajuns că sunteți cu noi.
-        </div>
+  <p>
+    <strong>Flori</strong><br />
+    Știți cât ne plac și tocmai de aceea nu vrem să fie risipă.<br />
+    Un singur trandafir este suficient 🌹 — culoarea o alegeți voi. Hihi.
+  </p>
 
-        <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
-          Dacă doriți totuși să aduceți ceva, un singur trandafir este suficient 🌹 — culoarea la alegere :)
-        </div>
+  <p>
+    <strong>Cadouri</strong><br />
+    Deși am repetat că nu avem nevoie de nimic — suntem serioși, aproape! — știm că o să insistați.<br />
+    Dacă doriți, ne-ar bucura să contribuiți la dorința noastră de a călători, așa că am creat un „borcan”:<br />
+    <a href="LINKUL_TAU_RELAIS" target="_blank">Relais & Châteaux</a><br /><br />
+    Există și varianta unui gift card Austrian Airlines:<br />
+    <a href="https://www.austrian.com/at/en/gift-card" target="_blank">
+      Austrian Airlines Gift Card
+    </a>
+  </p>
 
-        <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
-          Dar știm că nu o să ne ascultați și că, totuși, o să vreti să ne dăruiți ceva.
-        </div>
+  <p>
+    <strong>O alternativă</strong><br />
+    Dacă vă este mai apropiată această idee, în locul cadourilor de mai sus puteți contribui la ajutorul oferit animalelor de la adăpostul Smeura.
+  </p>
 
-        <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
-          Iar noi asta ne dorim, asa ca am creat un „borcan”:
-        </div>
+  <p>
+    Raiffeisen Bank Pitești<br />
+    IBAN: RO34 RZBR 0000 0600 0336 5196<br />
+    BIC: RZBRROBUXXX
+  </p>
 
-        <a
-          href="https://relaischateaux-liste-de-mariage.lepotcommun.fr/pot/pu0xlfnd"
-          target="_blank"
-          rel="noreferrer"
-          style={{
-            display: "inline-block",
-            marginBottom: "20px",
-            color: "#1f3f75",
-            textDecoration: "underline",
-            fontWeight: 600,
-          }}
-        >
-          Relais & Châteaux
-        </a>
+  <p>
+    Repetăm: este doar o petrecere. Vrem să sărbătorim legătura dintre noi și faptul că suntem împreună cu voi.
+  </p>
 
-        <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
-          Mai exista si varianta Austrian Airlines..., . Altfel, ne-ar bucura să contribuiți la o cauză pentru pisici...
-        </div>
+  <p>
+    Nu există taxă de tacâm, condiții sau așteptări. Nimic.
+  </p>
 
-        <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
-          Repet: este doar o petrecere. Vrem să sărbătorim legătura dintre noi și faptul că suntem împreună.
-        </div>
+  <p>
+    Vă mulțumim și vă iubim!
+  </p>
 
-        <div
-          style={{
-            marginBottom: "20px",
-            lineHeight: "1.7",
-            fontWeight: 700,
-          }}
-        >
-          Nu există taxă de tacâm, condiții sau așteptări. Nimic.
-        </div>
-
-        <div style={{ marginTop: "30px", opacity: 0.7 }}>
-          Vă mulțumim că sunteți aici.
-        </div>
-
-        <div style={{ marginTop: "20px" }}>
-          („Bună seara, prieteni!”)
-        </div>
-
-        <div style={{ marginTop: "30px", fontWeight: 700 }}>
-          Andreiana & Cezar & Ceapcici
+  <p>
+    Andreiana & Cezar & Ceapcici ✨
+  </p>
+</div>
         </div>
       </div>
     </div>
