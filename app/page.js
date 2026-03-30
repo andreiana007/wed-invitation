@@ -12,6 +12,7 @@ export default function Page() {
         position: "relative",
       }}
     >
+      {/* MAIN CARD */}
       <div
         style={{
           width: "100%",
@@ -66,76 +67,77 @@ export default function Page() {
             color: "#1f3f75",
             letterSpacing: "0.14em",
             fontWeight: 600,
-            marginBottom: "34px",
           }}
         >
           ora 19:00
         </div>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            gap: "12px",
-            flexWrap: "wrap",
-          }}
-        >
-          <a
-            href="/detalii"
-            style={{
-              display: "inline-block",
-              padding: "12px 22px",
-              borderRadius: "999px",
-              border: "1px solid #1f3f75",
-              color: "#1f3f75",
-              textDecoration: "none",
-              fontSize: "14px",
-              fontWeight: 600,
-              letterSpacing: "0.08em",
-              background: "rgba(255,255,255,0.7)",
-            }}
-          >
-            Detalii
-          </a>
-
-          <a
-            href="/rsvp"
-            style={{
-              display: "inline-block",
-              padding: "12px 22px",
-              borderRadius: "999px",
-              border: "1px solid #7266d8",
-              color: "#7266d8",
-              textDecoration: "none",
-              fontSize: "14px",
-              fontWeight: 600,
-              letterSpacing: "0.08em",
-              background: "rgba(255,255,255,0.7)",
-            }}
-          >
-            RSVP
-          </a>
-
-          <a
-            href="/info"
-            style={{
-              display: "inline-block",
-              padding: "12px 22px",
-              borderRadius: "999px",
-              border: "1px solid #3f9a6f",
-              color: "#3f9a6f",
-              textDecoration: "none",
-              fontSize: "14px",
-              fontWeight: 600,
-              letterSpacing: "0.08em",
-              background: "rgba(255,255,255,0.7)",
-            }}
-          >
-            Info
-          </a>
-        </div>
       </div>
 
+      {/* RIGHT SIDE BUTTONS */}
+      <div
+        style={{
+          position: "absolute",
+          right: "40px",
+          top: "50%",
+          transform: "translateY(-50%)",
+          display: "flex",
+          flexDirection: "column",
+          gap: "14px",
+        }}
+      >
+        <a
+          href="/detalii"
+          style={{
+            padding: "10px 18px",
+            borderRadius: "999px",
+            border: "1px solid #1f3f75",
+            color: "#1f3f75",
+            textDecoration: "none",
+            fontSize: "13px",
+            fontWeight: 600,
+            letterSpacing: "0.08em",
+            background: "rgba(255,255,255,0.7)",
+          }}
+        >
+          Detalii
+        </a>
+
+        <a
+          href="/rsvp"
+          style={{
+            padding: "10px 18px",
+            borderRadius: "999px",
+            border: "1px solid #7266d8",
+            color: "#7266d8",
+            textDecoration: "none",
+            fontSize: "13px",
+            fontWeight: 600,
+            letterSpacing: "0.08em",
+            background: "rgba(255,255,255,0.7)",
+          }}
+        >
+          RSVP
+        </a>
+
+        <a
+          href="/info"
+          style={{
+            padding: "10px 18px",
+            borderRadius: "999px",
+            border: "1px solid #3f9a6f",
+            color: "#3f9a6f",
+            textDecoration: "none",
+            fontSize: "13px",
+            fontWeight: 600,
+            letterSpacing: "0.08em",
+            background: "rgba(255,255,255,0.7)",
+          }}
+        >
+          Pisica va răspunde
+        </a>
+      </div>
+
+      {/* SIGNATURE */}
       <div
         style={{
           position: "absolute",
