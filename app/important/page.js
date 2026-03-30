@@ -46,7 +46,7 @@ export default function Important() {
         </div>
 
         <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
-          Dar știm că nu o să ne ascultați și că, totuși, o să ne dăruiți ceva.
+          Dar știm că nu o să ne ascultați și că, totuși, o să vreti să ne dăruiți ceva.
         </div>
 
         <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
@@ -69,7 +69,7 @@ export default function Important() {
         </a>
 
         <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
-          Există și o variantă la Austrian Airlines, dar ne-ar bucura, dacă vă este apropiată, să contribuiți și la o cauză pentru pisici.
+          Mai exista si varianta Austrian Airlines..., . Altfel, ne-ar bucura să contribuiți la o cauză pentru pisici...
         </div>
 
         <div style={{ marginBottom: "20px", lineHeight: "1.7" }}>
