@@ -56,11 +56,11 @@ export default function Page() {
         <div
           style={{
             fontSize: "16px",
-            color: "#1e3a5f",
+            color: "#3b6fb6",
             opacity: 0.6,
           }}
         >
-          19:00
+          ora 19:00
         </div>
       </div>
     </div>
