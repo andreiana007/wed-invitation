@@ -60,7 +60,7 @@ export default function RSVP() {
             letterSpacing: "0.08em",
           }}
         >
-          Aici e perfect!
+          Click ici!
         </a>
       </div>
     </div>
