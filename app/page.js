@@ -25,7 +25,7 @@ export default function Page() {
           style={{
             fontSize: "56px",
             margin: "20px 0 10px 0",
-            color: "#1e3a5f",
+            color: "#5a4fcf",
             fontWeight: 500,
           }}
         >
@@ -36,7 +36,7 @@ export default function Page() {
           style={{
             fontSize: "18px",
             marginBottom: "20px",
-            color: "#1e3a5f",
+            color: "#5a4fcf",
             opacity: 0.8,
           }}
         >
