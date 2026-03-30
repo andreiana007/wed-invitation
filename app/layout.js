@@ -4,8 +4,8 @@ export default function RootLayout({ children }) {
       <body
         style={{
           margin: 0,
-          fontFamily: "Inter, system-ui, sans-serif",
-          background: "linear-gradient(135deg, #0b1f44, #1e3a8a)",
+          minHeight: "100vh",
+          background: "#0b1f44",
         }}
       >
         {children}
