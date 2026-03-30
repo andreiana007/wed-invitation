@@ -3,7 +3,7 @@ export default function Page() {
     <div
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(to bottom, #faf7ff, #eef2ff)",
+        background: "transparent",
         padding: "24px",
         fontFamily: "'Courier New', monospace",
         position: "relative",
