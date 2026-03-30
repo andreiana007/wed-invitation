@@ -70,6 +70,22 @@ export default function Page() {
           ora 19:00
         </div>
       </div>
+<a
+  href="/detalii"
+  style={{
+    display: "inline-block",
+    marginTop: "30px",
+    padding: "12px 22px",
+    borderRadius: "999px",
+    border: "1px solid #1f3f75",
+    color: "#1f3f75",
+    textDecoration: "none",
+    fontSize: "14px",
+    fontWeight: 500,
+  }}
+>
+  Detalii
+</a>
 
       {/* NEON SIGNATURE */}
       <div
