@@ -47,7 +47,7 @@ export default function Page() {
           style={{
             fontSize: "26px",
             marginBottom: "10px",
-            color: "#1e3a5f",
+            color: "#5a4fcf",
           }}
         >
           06 · 06 · 26
