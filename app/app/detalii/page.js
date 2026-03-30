@@ -1,42 +1,61 @@
 export default function Detalii() {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "linear-gradient(to bottom, #faf7ff, #eef2ff)",
-        padding: "24px",
-        fontFamily: "'Courier New', monospace",
-      }}
-    >
-      <div
-        style={{
-          width: "100%",
-          maxWidth: "720px",
-          background: "rgba(255,255,255,0.92)",
-          borderRadius: "32px",
-          padding: "56px 40px",
-          textAlign: "center",
-          boxShadow: "0 12px 40px rgba(0,0,0,0.06)",
-        }}
-      >
-        <h1 style={{ color: "#3f9a6f", fontSize: "42px" }}>
+    <div style={{
+      minHeight: "100vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      background: "linear-gradient(to bottom, #faf7ff, #eef2ff)",
+      fontFamily: "'Courier New', monospace",
+      padding: "24px"
+    }}>
+      <div style={{
+        maxWidth: "700px",
+        width: "100%",
+        background: "rgba(255,255,255,0.92)",
+        borderRadius: "32px",
+        padding: "60px 40px",
+        textAlign: "left"
+      }}>
+        <h1 style={{ color: "#3f9a6f", fontSize: "42px", marginBottom: "30px" }}>
           Detalii
         </h1>
 
-        <div style={{ marginTop: "30px", color: "#1f3f75" }}>
-          📍 Terenuri – București  
+        <div style={{ color: "#1f3f75", marginBottom: "8px", fontWeight: 600 }}>
+          📍 Hotel Ramada Plaza
         </div>
 
-        <div style={{ marginTop: "10px", color: "#7266d8" }}>
+        <div style={{ marginBottom: "4px" }}>
+          Bulevardul Poligrafiei 3–5
+        </div>
+
+        <div style={{ marginBottom: "16px" }}>
+          București
+        </div>
+
+        <div style={{ marginBottom: "24px", opacity: 0.7 }}>
+          lângă terenurile de tenis
+        </div>
+
+        <div style={{ color: "#7266d8", marginBottom: "30px" }}>
           06 · 06 · 26 · ora 19:00
         </div>
 
-        <div style={{ marginTop: "30px", fontSize: "14px", opacity: 0.7 }}>
-          Mai multe detalii în curând.
-        </div>
+        <a
+          href="https://maps.google.com/?q=Ramada+Plaza+Bucuresti"
+          target="_blank"
+          style={{
+            padding: "12px 20px",
+            border: "1.5px solid #1f3f75",
+            borderRadius: "999px",
+            textDecoration: "none",
+            color: "#1f3f75",
+            fontWeight: 700,
+            letterSpacing: "0.08em"
+          }}
+        >
+          Deschide în Maps
+        </a>
       </div>
     </div>
   );
