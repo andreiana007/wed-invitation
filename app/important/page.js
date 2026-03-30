@@ -7,7 +7,6 @@ export default function Important() {
         justifyContent: "center",
         alignItems: "center",
         background: "linear-gradient(to bottom, #faf7ff, #eef2ff)",
-        fontFamily: "'Courier New', monospace",
         padding: "24px",
       }}
     >
