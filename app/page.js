@@ -23,13 +23,12 @@ export default function Page() {
           boxShadow: "0 12px 40px rgba(0,0,0,0.06)",
         }}
       >
-        {/* TITLE */}
         <h1
           style={{
             fontSize: "66px",
             margin: "0 0 18px 0",
             color: "#3f9a6f",
-            fontWeight: 700, // stronger
+            fontWeight: 700,
             letterSpacing: "0.03em",
             textShadow: "0 0 30px rgba(63,154,111,0.35)",
           }}
@@ -37,7 +36,6 @@ export default function Page() {
           La Terenuri
         </h1>
 
-        {/* NAMES */}
         <div
           style={{
             fontSize: "22px",
@@ -50,7 +48,6 @@ export default function Page() {
           cu Andreiana și Cezar
         </div>
 
-        {/* DATE */}
         <div
           style={{
             fontSize: "32px",
@@ -63,39 +60,82 @@ export default function Page() {
           06 · 06 · 26
         </div>
 
-        {/* TIME */}
         <div
           style={{
             fontSize: "17px",
             color: "#1f3f75",
             letterSpacing: "0.14em",
             fontWeight: 600,
-            marginBottom: "30px",
+            marginBottom: "34px",
           }}
         >
           ora 19:00
         </div>
 
-        {/* BUTTON */}
-        <a
-          href="/detalii"
+        <div
           style={{
-            display: "inline-block",
-            padding: "12px 26px",
-            borderRadius: "999px",
-            border: "1px solid #1f3f75",
-            color: "#1f3f75",
-            textDecoration: "none",
-            fontSize: "14px",
-            fontWeight: 600,
-            letterSpacing: "0.08em",
+            display: "flex",
+            justifyContent: "flex-end",
+            gap: "12px",
+            flexWrap: "wrap",
           }}
         >
-          Detalii
-        </a>
+          <a
+            href="/detalii"
+            style={{
+              display: "inline-block",
+              padding: "12px 22px",
+              borderRadius: "999px",
+              border: "1px solid #1f3f75",
+              color: "#1f3f75",
+              textDecoration: "none",
+              fontSize: "14px",
+              fontWeight: 600,
+              letterSpacing: "0.08em",
+              background: "rgba(255,255,255,0.7)",
+            }}
+          >
+            Detalii
+          </a>
+
+          <a
+            href="/rsvp"
+            style={{
+              display: "inline-block",
+              padding: "12px 22px",
+              borderRadius: "999px",
+              border: "1px solid #7266d8",
+              color: "#7266d8",
+              textDecoration: "none",
+              fontSize: "14px",
+              fontWeight: 600,
+              letterSpacing: "0.08em",
+              background: "rgba(255,255,255,0.7)",
+            }}
+          >
+            RSVP
+          </a>
+
+          <a
+            href="/info"
+            style={{
+              display: "inline-block",
+              padding: "12px 22px",
+              borderRadius: "999px",
+              border: "1px solid #3f9a6f",
+              color: "#3f9a6f",
+              textDecoration: "none",
+              fontSize: "14px",
+              fontWeight: 600,
+              letterSpacing: "0.08em",
+              background: "rgba(255,255,255,0.7)",
+            }}
+          >
+            Info
+          </a>
+        </div>
       </div>
 
-      {/* SIGNATURE */}
       <div
         style={{
           position: "absolute",
