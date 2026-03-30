@@ -86,6 +86,23 @@ export default function Page() {
         }}
       >
         <a
+  href="/important"
+  style={{
+    padding: "12px 20px",
+    borderRadius: "999px",
+    border: "1.5px solid #e11d48",
+    color: "#e11d48",
+    textDecoration: "none",
+    fontSize: "15px",
+    fontWeight: 700,
+    letterSpacing: "0.1em",
+    background: "rgba(255,255,255,0.9)",
+    textAlign: "center",
+  }}
+>
+  Important
+</a>
+        <a
           href="/detalii"
           style={{
             padding: "12px 20px",
