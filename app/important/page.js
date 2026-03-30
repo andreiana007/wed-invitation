@@ -40,8 +40,14 @@ export default function Important() {
 
           <br />
 
+          <p style={{ fontWeight: 700 }}>Câteva informații:</p>
+
+          <br />
+
           <p>
-            <strong>Flori</strong>
+            <span style={{ fontWeight: 800, fontSize: "18px" }}>
+              1. Flori
+            </span>
             <br />
             Știți cât ne plac și tocmai de aceea nu vrem să fie risipă.
             <br />
@@ -52,7 +58,9 @@ export default function Important() {
           <br />
 
           <p>
-            <strong>Cadouri</strong>
+            <span style={{ fontWeight: 800, fontSize: "18px" }}>
+              2. Cadouri
+            </span>
             <br />
             Deși am repetat că nu avem nevoie de nimic — suntem serioși,
             aproape! — știm că o să insistați.
@@ -75,8 +83,6 @@ export default function Important() {
             Relais & Châteaux
           </a>
 
-          <br />
-
           <p>
             Există și varianta unui gift card Austrian Airlines:
           </p>
@@ -98,7 +104,9 @@ export default function Important() {
           <br />
 
           <p>
-            <strong>O alternativă</strong>
+            <span style={{ fontWeight: 800, fontSize: "18px" }}>
+              3. O alternativă
+            </span>
             <br />
             Dacă vă este mai apropiată această idee, în locul cadourilor de mai
             sus puteți contribui la ajutorul oferit animalelor de la adăpostul
