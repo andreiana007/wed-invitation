@@ -75,7 +75,7 @@ export default function Page() {
       <div
         style={{
           position: "absolute",
-          bottom: "20px",
+          bottom: "60px",
           right: "24px",
           fontSize: "11px",
           color: "#ff4fd8",
