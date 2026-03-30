@@ -6,7 +6,7 @@ export default function Important() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(to bottom, #faf7ff, #eef2ff)",
+        background: "transparent",
         padding: "24px",
       }}
     >
@@ -32,55 +32,109 @@ export default function Important() {
           Important
         </h1>
 
-       <div style={{ lineHeight: "1.8" }}>
-  <p>
-    Vă salutăm pe toți și vă mulțumim că sunteți prietenii noștri și că vom fi împreună pe 6 iunie.
-  </p>
+        <div style={{ lineHeight: "1.9", color: "#1f3f75" }}>
+          <p>
+            Vă salutăm pe toți și vă mulțumim că sunteți prietenii noștri și că
+            vom fi împreună pe 6 iunie.
+          </p>
 
-  <p>
-    <strong>Flori</strong><br />
-    Știți cât ne plac și tocmai de aceea nu vrem să fie risipă.<br />
-    Un singur trandafir este suficient 🌹 — culoarea o alegeți voi. Hihi.
-  </p>
+          <br />
 
-  <p>
-    <strong>Cadouri</strong><br />
-    Deși am repetat că nu avem nevoie de nimic — suntem serioși, aproape! — știm că o să insistați.<br />
-    Dacă doriți, ne-ar bucura să contribuiți la dorința noastră de a călători, așa că am creat un „borcan”:<br />
-    <a href="LINKUL_TAU_RELAIS" target="_blank">Relais & Châteaux</a><br /><br />
-    Există și varianta unui gift card Austrian Airlines:<br />
-    <a href="https://www.austrian.com/at/en/gift-card" target="_blank">
-      Austrian Airlines Gift Card
-    </a>
-  </p>
+          <p>
+            <strong>Flori</strong>
+            <br />
+            Știți cât ne plac și tocmai de aceea nu vrem să fie risipă.
+            <br />
+            Un singur trandafir este suficient 🌹 — culoarea o alegeți voi.
+            Hihi.
+          </p>
 
-  <p>
-    <strong>O alternativă</strong><br />
-    Dacă vă este mai apropiată această idee, în locul cadourilor de mai sus puteți contribui la ajutorul oferit animalelor de la adăpostul Smeura.
-  </p>
+          <br />
 
-  <p>
-    Raiffeisen Bank Pitești<br />
-    IBAN: RO34 RZBR 0000 0600 0336 5196<br />
-    BIC: RZBRROBUXXX
-  </p>
+          <p>
+            <strong>Cadouri</strong>
+            <br />
+            Deși am repetat că nu avem nevoie de nimic — suntem serioși,
+            aproape! — știm că o să insistați.
+            <br />
+            Dacă doriți, ne-ar bucura să contribuiți la dorința noastră de a
+            călători, așa că am creat un „borcan”:
+          </p>
 
-  <p>
-    Repetăm: este doar o petrecere. Vrem să sărbătorim legătura dintre noi și faptul că suntem împreună cu voi.
-  </p>
+          <a
+            href="https://relaischateaux-liste-de-mariage.lepotcommun.fr/pot/pu0xlfnd"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              display: "inline-block",
+              marginBottom: "12px",
+              color: "#1f3f75",
+              fontWeight: 700,
+            }}
+          >
+            Relais & Châteaux
+          </a>
 
-  <p>
-    Nu există taxă de tacâm, condiții sau așteptări. Nimic.
-  </p>
+          <br />
 
-  <p>
-    Vă mulțumim și vă iubim!
-  </p>
+          <p>
+            Există și varianta unui gift card Austrian Airlines:
+          </p>
 
-  <p>
-    Andreiana & Cezar & Ceapcici ✨
-  </p>
-</div>
+          <a
+            href="https://www.austrian.com/at/en/gift-card"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              display: "inline-block",
+              marginBottom: "20px",
+              color: "#1f3f75",
+              fontWeight: 700,
+            }}
+          >
+            Austrian Airlines Gift Card
+          </a>
+
+          <br />
+
+          <p>
+            <strong>O alternativă</strong>
+            <br />
+            Dacă vă este mai apropiată această idee, în locul cadourilor de mai
+            sus puteți contribui la ajutorul oferit animalelor de la adăpostul
+            Smeura.
+          </p>
+
+          <p>
+            Raiffeisen Bank Pitești
+            <br />
+            IBAN: RO34 RZBR 0000 0600 0336 5196
+            <br />
+            BIC: RZBRROBUXXX
+          </p>
+
+          <br />
+
+          <p>
+            Repetăm: este doar o petrecere. Vrem să sărbătorim legătura dintre
+            noi și faptul că suntem împreună cu voi.
+          </p>
+
+          <p style={{ fontWeight: 700 }}>
+            Nu există taxă de tacâm, condiții sau așteptări. Nimic.
+          </p>
+
+          <br />
+
+          <p>Vă mulțumim și vă iubim!</p>
+
+          <p style={{ marginTop: "10px", opacity: 0.7 }}>
+            (Buna seara, prieteeeni!)
+          </p>
+
+          <p style={{ marginTop: "20px", fontWeight: 700 }}>
+            Andreiana & Cezar & Ceapcici ✨
+          </p>
         </div>
       </div>
     </div>
