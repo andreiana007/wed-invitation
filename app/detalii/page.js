@@ -27,26 +27,34 @@ export default function Detalii() {
           Detalii
         </h1>
 
-        {/* CEREMONIE */}
-        <div style={{
-          marginBottom: "30px",
-          fontWeight: 700,
-          color: "#1f3f75"
-        }}>
-          Ceremonie
-        </div>
+       {/* CEREMONIE */}
+<div style={{
+  marginBottom: "30px",
+  fontWeight: 700,
+  color: "#1f3f75"
+}}>
+  Ceremonie
+</div>
 
-        <div style={{ marginBottom: "6px" }}>
-          Catedrala Sfântul Iosif
-        </div>
+<div style={{ marginBottom: "6px" }}>
+  Catedrala Sfântul Iosif
+</div>
 
-        <div style={{ marginBottom: "6px", color: "#7266d8" }}>
-          6 iunie 2026
-        </div>
+<div style={{ marginBottom: "4px" }}>
+  Strada General Berthelot 19
+</div>
 
-        <div style={{ marginBottom: "24px", color: "#1f3f75" }}>
-          ora 12:50
-        </div>
+<div style={{ marginBottom: "10px" }}>
+  București
+</div>
+
+<div style={{ marginBottom: "6px", color: "#7266d8" }}>
+  6 iunie 2026
+</div>
+
+<div style={{ marginBottom: "24px", color: "#1f3f75" }}>
+  ora 12:50
+</div>
 
         {/* SEPARATOR */}
         <div style={{
