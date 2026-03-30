@@ -5,7 +5,6 @@ export default function Page() {
         minHeight: "100vh",
         background: "transparent",
         padding: "24px",
-        fontFamily: "'Courier New', monospace",
         position: "relative",
         display: "flex",
         justifyContent: "center",
