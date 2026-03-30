@@ -1,4 +1,4 @@
-   export default function Page() {
+export default function Page() {
   return (
     <div
       style={{
@@ -9,6 +9,7 @@
         background: "linear-gradient(to bottom, #faf7ff, #eef2ff)",
         padding: "24px",
         fontFamily: "'Courier New', monospace",
+        position: "relative",
       }}
     >
       <div
@@ -28,7 +29,7 @@
             fontSize: "64px",
             margin: "0 0 14px 0",
             color: "#3f9a6f",
-            fontWeight: 600, // thicker
+            fontWeight: 600,
             letterSpacing: "0.02em",
             textShadow: "0 0 30px rgba(63,154,111,0.35)",
           }}
@@ -73,6 +74,21 @@
           ora 19:00
         </div>
       </div>
+
+      {/* SIGNATURE */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: "20px",
+          right: "24px",
+          fontSize: "12px",
+          color: "#ffffff",
+          opacity: 0.6,
+          fontFamily: "'Courier New', monospace",
+        }}
+      >
+        handcrafted by Andreiana ♡
+      </div>
     </div>
   );
-}      
+}
