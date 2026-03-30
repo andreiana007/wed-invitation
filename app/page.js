@@ -88,15 +88,15 @@ export default function Page() {
         <a
           href="/detalii"
           style={{
-            padding: "10px 18px",
+            padding: "12px 20px",
             borderRadius: "999px",
-            border: "1px solid #1f3f75",
+            border: "1.5px solid #1f3f75",
             color: "#1f3f75",
             textDecoration: "none",
-            fontSize: "13px",
-            fontWeight: 600,
-            letterSpacing: "0.08em",
-            background: "rgba(255,255,255,0.7)",
+            fontSize: "15px",
+            fontWeight: 700,
+            letterSpacing: "0.1em",
+            background: "rgba(255,255,255,0.85)",
           }}
         >
           Detalii
@@ -105,15 +105,15 @@ export default function Page() {
         <a
           href="/rsvp"
           style={{
-            padding: "10px 18px",
+            padding: "12px 20px",
             borderRadius: "999px",
-            border: "1px solid #7266d8",
+            border: "1.5px solid #7266d8",
             color: "#7266d8",
             textDecoration: "none",
-            fontSize: "13px",
-            fontWeight: 600,
-            letterSpacing: "0.08em",
-            background: "rgba(255,255,255,0.7)",
+            fontSize: "15px",
+            fontWeight: 700,
+            letterSpacing: "0.1em",
+            background: "rgba(255,255,255,0.85)",
           }}
         >
           RSVP
@@ -122,15 +122,15 @@ export default function Page() {
         <a
           href="/info"
           style={{
-            padding: "10px 18px",
+            padding: "12px 20px",
             borderRadius: "999px",
-            border: "1px solid #3f9a6f",
+            border: "1.5px solid #3f9a6f",
             color: "#3f9a6f",
             textDecoration: "none",
-            fontSize: "13px",
-            fontWeight: 600,
-            letterSpacing: "0.08em",
-            background: "rgba(255,255,255,0.7)",
+            fontSize: "15px",
+            fontWeight: 700,
+            letterSpacing: "0.1em",
+            background: "rgba(255,255,255,0.85)",
           }}
         >
           Pisica va răspunde
