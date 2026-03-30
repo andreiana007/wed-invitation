@@ -5,8 +5,7 @@ export default function RootLayout({ children }) {
         style={{
           margin: 0,
           fontFamily: "Inter, system-ui, sans-serif",
-          background:
-            "linear-gradient(135deg, #cdb4db 0%, #a2d2ff 50%, #c7f9cc 100%)",
+          background: "linear-gradient(135deg, #0f172a, #1e3a8a)",
         }}
       >
         {children}
