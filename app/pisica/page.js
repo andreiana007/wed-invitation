@@ -68,7 +68,7 @@ export default function PisicaPage() {
         }}
       >
         <div style={{ textAlign: "center", marginBottom: "14px" }}>
-          <div style={{ fontSize: "64px", lineHeight: 1, marginBottom: "8px" }}>🐱</div>
+      
           <h1
             style={{
               margin: 0,
