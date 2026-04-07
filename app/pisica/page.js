@@ -26,7 +26,7 @@ export default function PisicaPage() {
     }
 
     if (lower.includes("cadou")) {
-      return "Pisica spune: Prezența voastră este cel mai frumos cadou.";
+      return "Pisica spune: Prezența voastră este cadoul.";
     }
 
     if (
