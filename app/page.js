@@ -2,10 +2,6 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    import Link from "next/link";
-
-export default function Page() {
-  return (
     <div
       style={{
         minHeight: "100vh",
