@@ -3,9 +3,7 @@
 import { useState } from "react";
 
 export default function PisicaPage() {
-  const [messages, setMessages] = useState([
-    { text: "Miau! Întreab-o pe Ceapcici aproape orice 🐾", from: "cat" },
-  ]);
+  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
   const getAnswer = (text) => {
@@ -28,7 +26,7 @@ export default function PisicaPage() {
     }
 
     if (lower.includes("salut") || lower.includes("hello") || lower.includes("buna") || lower.includes("bună")) {
-      return "Miau! Bine ai venit.";
+      return "Miau! 🐾";
     }
 
     return "Miau... pentru alte detalii, verificați invitația sau sunați-ne.";
@@ -73,16 +71,13 @@ export default function PisicaPage() {
           <div style={{ fontSize: "64px", lineHeight: 1, marginBottom: "8px" }}>🐱</div>
           <h1
             style={{
-              margin: "0 0 6px 0",
+              margin: 0,
               color: "#4f9b6f",
               fontSize: "28px",
             }}
           >
             Pisica va răspunde
           </h1>
-          <p style={{ margin: 0, color: "#666", fontSize: "14px" }}>
-            Întreab-o pe Ceapcici aproape orice
-          </p>
         </div>
 
         <div
