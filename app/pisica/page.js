@@ -26,7 +26,7 @@ export default function PisicaPage() {
     }
 
     if (lower.includes("cadou")) {
-      return "Prezența voastră este cel mai frumos cadou.";
+      return "Prezența voastră este cadoul.";
     }
 
     return "Miau... verifică invitația pentru detalii.";
@@ -47,10 +47,10 @@ export default function PisicaPage() {
       style={{
         minHeight: "100vh",
         background: "#fffaf7",
-        fontFamily: "Georgia, serif",
-        padding: "20px",
         display: "flex",
         justifyContent: "center",
+        alignItems: "center",
+        padding: "20px",
       }}
     >
       <div
@@ -66,22 +66,26 @@ export default function PisicaPage() {
           height: "80vh",
         }}
       >
-        {/* HEADER */}
+        {/* HEADER (THIS WAS MISSING) */}
         <div style={{ textAlign: "center", marginBottom: "10px" }}>
+          
+          {/* CAT IMAGE */}
           <img
-            src="/ceapcici.jpg"
+            src="https://cdn.pixabay.com/photo/2021/11/13/16/08/cat-6790676_1280.png"
             alt="Ceapcici"
             style={{
-              width: "100px",
-              height: "100px",
-              objectFit: "cover",
-              borderRadius: "50%",
+              width: "120px",
               marginBottom: "10px",
+              filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.1))",
             }}
           />
 
-          <h2>Pisica va răspunde 🐾</h2>
+          {/* TITLE */}
+          <h2 style={{ marginBottom: "4px" }}>
+            Pisica va răspunde 🐾
+          </h2>
 
+          {/* SUBTITLE */}
           <p style={{ color: "#777", fontSize: "14px" }}>
             Întreab-o pe Ceapcici aproape orice
           </p>
