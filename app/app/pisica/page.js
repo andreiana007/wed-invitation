@@ -25,7 +25,7 @@ export default function PisicaPage() {
       return "Pisica spune: Prezența voastră este cel mai frumos cadou.";
     }
 
-    return "Pisica spune: Miau… verifică invitația pentru toate detaliile.";
+    return "Pisica spune: Miiiau… verifică invitația pentru toate detaliile.";
   };
 
   const handleSend = () => {
