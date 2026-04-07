@@ -1,3 +1,9 @@
+import Link from "next/link";
+
+export default function Page() {
+  return (
+    import Link from "next/link";
+
 export default function Page() {
   return (
     <div
@@ -63,12 +69,10 @@ export default function Page() {
 
           <div
             style={{
-              fontSize: "clamp(24px, 6vw, 32px)",
+              fontSize: "clamp(16px, 3vw, 20px)",
+              color: "#b14f6a",
               marginBottom: "14px",
-              color: "#7266d8",
-              letterSpacing: "0.12em",
-              fontWeight: 600,
-              lineHeight: 1.2,
+              lineHeight: 1.5,
             }}
           >
             06 · 06 · 26
@@ -76,116 +80,100 @@ export default function Page() {
 
           <div
             style={{
-              fontSize: "clamp(15px, 3.6vw, 17px)",
-              color: "#1f3f75",
-              letterSpacing: "0.14em",
-              fontWeight: 600,
-              lineHeight: 1.2,
+              fontSize: "clamp(15px, 3vw, 18px)",
+              color: "#5f5f5f",
+              lineHeight: 1.7,
             }}
           >
-            ora 19:00
+            Bună seara, prieteeeni!
           </div>
         </div>
 
         <div
           style={{
-            flex: "0 1 240px",
-            width: "100%",
-            maxWidth: "240px",
+            flex: "0 1 220px",
             display: "flex",
             flexDirection: "column",
-            gap: "14px",
-            alignItems: "stretch",
+            gap: "16px",
+            alignItems: "center",
           }}
         >
-          <a
-            href="/important"
-            style={{
-              padding: "12px 20px",
-              borderRadius: "999px",
-              border: "1.5px solid #e11d48",
-              color: "#e11d48",
-              textDecoration: "none",
-              fontSize: "15px",
-              fontWeight: 700,
-              letterSpacing: "0.1em",
-              background: "rgba(255,255,255,0.9)",
-              textAlign: "left",
-            }}
-          >
-            Important
-          </a>
+          <Link href="/important" style={{ textDecoration: "none", width: "100%" }}>
+            <button
+              style={{
+                width: "220px",
+                padding: "14px 24px",
+                borderRadius: "999px",
+                border: "1.5px solid #d85b73",
+                background: "white",
+                color: "#d85b73",
+                cursor: "pointer",
+                fontFamily: "Georgia, serif",
+                fontSize: "18px",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+              }}
+            >
+              Important
+            </button>
+          </Link>
 
-          <a
-            href="/detalii"
-            style={{
-              padding: "12px 20px",
-              borderRadius: "999px",
-              border: "1.5px solid #1f3f75",
-              color: "#1f3f75",
-              textDecoration: "none",
-              fontSize: "15px",
-              fontWeight: 700,
-              letterSpacing: "0.1em",
-              background: "rgba(255,255,255,0.85)",
-              textAlign: "left",
-            }}
-          >
-            Detalii
-          </a>
+          <Link href="/detalii" style={{ textDecoration: "none", width: "100%" }}>
+            <button
+              style={{
+                width: "220px",
+                padding: "14px 24px",
+                borderRadius: "999px",
+                border: "1.5px solid #355287",
+                background: "white",
+                color: "#355287",
+                cursor: "pointer",
+                fontFamily: "Georgia, serif",
+                fontSize: "18px",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+              }}
+            >
+              Detalii
+            </button>
+          </Link>
 
-          <a
-            href="/rsvp"
-            style={{
-              padding: "12px 20px",
-              borderRadius: "999px",
-              border: "1.5px solid #7266d8",
-              color: "#7266d8",
-              textDecoration: "none",
-              fontSize: "15px",
-              fontWeight: 700,
-              letterSpacing: "0.1em",
-              background: "rgba(255,255,255,0.85)",
-              textAlign: "left",
-            }}
-          >
-            RSVP
-          </a>
+          <Link href="/rsvp" style={{ textDecoration: "none", width: "100%" }}>
+            <button
+              style={{
+                width: "220px",
+                padding: "14px 24px",
+                borderRadius: "999px",
+                border: "1.5px solid #7b66d9",
+                background: "white",
+                color: "#7b66d9",
+                cursor: "pointer",
+                fontFamily: "Georgia, serif",
+                fontSize: "18px",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+              }}
+            >
+              RSVP
+            </button>
+          </Link>
 
-          <a
-            href="/info"
-            style={{
-              padding: "12px 20px",
-              borderRadius: "999px",
-              border: "1.5px solid #3f9a6f",
-              color: "#3f9a6f",
-              textDecoration: "none",
-              fontSize: "15px",
-              fontWeight: 700,
-              letterSpacing: "0.1em",
-              background: "rgba(255,255,255,0.85)",
-              textAlign: "left",
-            }}
-          >
-            Pisica va răspunde
-          </a>
+          <Link href="/pisica" style={{ textDecoration: "none", width: "100%" }}>
+            <button
+              style={{
+                width: "220px",
+                padding: "14px 24px",
+                borderRadius: "999px",
+                border: "1.5px solid #5aa67a",
+                background: "white",
+                color: "#5aa67a",
+                cursor: "pointer",
+                fontFamily: "Georgia, serif",
+                fontSize: "18px",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+              }}
+            >
+              Pisica va răspunde
+            </button>
+          </Link>
         </div>
-      </div>
-
-      <div
-        style={{
-          position: "fixed",
-          bottom: "24px",
-          right: "24px",
-          fontSize: "11px",
-          color: "#ff4fd8",
-          fontWeight: 500,
-          textShadow:
-            "0 0 8px rgba(255,79,216,0.9), 0 0 16px rgba(255,79,216,0.6)",
-          zIndex: 10,
-        }}
-      >
-        handcrafted by Andreiana ♡
       </div>
     </div>
   );
