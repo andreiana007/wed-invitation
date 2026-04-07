@@ -72,7 +72,7 @@ export default function Detalii() {
         </div>
 
         <div style={{ marginBottom: "6px", color: "#1f3f75" }}>
-          📍 Hotel Ramada Plaza, la terenurile de tenis
+          📍 Hotel Ramada Plaza
         </div>
 
         <div style={{ marginBottom: "4px" }}>
