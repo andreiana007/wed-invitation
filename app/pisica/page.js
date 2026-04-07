@@ -10,7 +10,7 @@ export default function PisicaPage() {
     const lower = text.toLowerCase();
 
     if (lower.includes("unde") || lower.includes("loc")) {
-      return "Pisica spune: La Hotel Ramada Plaza, la terenurile de tenis.";
+      return "Pisica spune: La Hotel Ramada Plaza, pe Bdv, Poligrafiei 6-8,  la terenurile de tenis.";
     }
 
     if (lower.includes("martori")) {
