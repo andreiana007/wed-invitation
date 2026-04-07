@@ -1,8 +1,26 @@
 import Link from "next/link";
+import { Courier_Prime } from "next/font/google";
+
+const courier = Courier_Prime({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export default function Page() {
+  const buttonStyle = {
+    width: "220px",
+    padding: "14px 24px",
+    borderRadius: "999px",
+    background: "transparent",
+    cursor: "pointer",
+    fontFamily: "inherit",
+    fontSize: "16px",
+    boxShadow: "none",
+  };
+
   return (
     <div
+      className={courier.className}
       style={{
         minHeight: "100vh",
         background: "transparent",
@@ -65,10 +83,12 @@ export default function Page() {
 
           <div
             style={{
-              fontSize: "clamp(16px, 3vw, 20px)",
-              color: "#b14f6a",
+              fontSize: "clamp(24px, 5vw, 34px)",
               marginBottom: "14px",
-              lineHeight: 1.5,
+              color: "#6d60d9",
+              fontWeight: 700,
+              letterSpacing: "0.18em",
+              lineHeight: 1.3,
             }}
           >
             06 · 06 · 26
@@ -76,12 +96,14 @@ export default function Page() {
 
           <div
             style={{
-              fontSize: "clamp(15px, 3vw, 18px)",
-              color: "#5f5f5f",
-              lineHeight: 1.7,
+              fontSize: "clamp(16px, 3vw, 18px)",
+              color: "#1f3f75",
+              fontWeight: 600,
+              letterSpacing: "0.04em",
+              lineHeight: 1.5,
             }}
           >
-            Bună seara, prieteeeni!
+            ora 19:00
           </div>
         </div>
 
@@ -97,16 +119,9 @@ export default function Page() {
           <Link href="/important" style={{ textDecoration: "none", width: "100%" }}>
             <button
               style={{
-                width: "220px",
-                padding: "14px 24px",
-                borderRadius: "999px",
+                ...buttonStyle,
                 border: "1.5px solid #d85b73",
-                background: "white",
                 color: "#d85b73",
-                cursor: "pointer",
-                fontFamily: "Georgia, serif",
-                fontSize: "18px",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
               }}
             >
               Important
@@ -116,16 +131,9 @@ export default function Page() {
           <Link href="/detalii" style={{ textDecoration: "none", width: "100%" }}>
             <button
               style={{
-                width: "220px",
-                padding: "14px 24px",
-                borderRadius: "999px",
+                ...buttonStyle,
                 border: "1.5px solid #355287",
-                background: "white",
                 color: "#355287",
-                cursor: "pointer",
-                fontFamily: "Georgia, serif",
-                fontSize: "18px",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
               }}
             >
               Detalii
@@ -135,16 +143,9 @@ export default function Page() {
           <Link href="/rsvp" style={{ textDecoration: "none", width: "100%" }}>
             <button
               style={{
-                width: "220px",
-                padding: "14px 24px",
-                borderRadius: "999px",
+                ...buttonStyle,
                 border: "1.5px solid #7b66d9",
-                background: "white",
                 color: "#7b66d9",
-                cursor: "pointer",
-                fontFamily: "Georgia, serif",
-                fontSize: "18px",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
               }}
             >
               RSVP
@@ -154,22 +155,28 @@ export default function Page() {
           <Link href="/pisica" style={{ textDecoration: "none", width: "100%" }}>
             <button
               style={{
-                width: "220px",
-                padding: "14px 24px",
-                borderRadius: "999px",
+                ...buttonStyle,
                 border: "1.5px solid #5aa67a",
-                background: "white",
                 color: "#5aa67a",
-                cursor: "pointer",
-                fontFamily: "Georgia, serif",
-                fontSize: "18px",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
               }}
             >
               Pisica va răspunde
             </button>
           </Link>
         </div>
+      </div>
+
+      <div
+        style={{
+          position: "fixed",
+          right: "18px",
+          bottom: "14px",
+          fontSize: "12px",
+          color: "#ff74cf",
+          letterSpacing: "0.03em",
+        }}
+      >
+        handcrafted by Andreiana ♡
       </div>
     </div>
   );
