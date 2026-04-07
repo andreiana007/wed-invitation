@@ -129,7 +129,7 @@ export default function Important() {
           </p>
 
           <p style={{ fontWeight: 700 }}>
-            Nu există taxă de tacâm, condiții sau așteptări. Nimic. Dress code-ul este simplu: sa va imbracati colorat. Nu în negru. 
+            Nu există taxă de tacâm, condiții sau așteptări. Nimic. Dress code-ul este simplu: sa va imbracati colorat. Nu în negru. Si cu pantofi de sport - la petrecere. 
           </p>
 
           <br />
