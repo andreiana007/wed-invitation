@@ -166,7 +166,7 @@ export default function PisicaPage() {
               borderRadius: "10px",
               border: "1px solid #111",
               fontFamily: '"Courier Prime", "Courier New", monospace',
-              fontSize "16px",
+              fontSize: "16px",
             }}
           />
 
@@ -181,7 +181,7 @@ export default function PisicaPage() {
               cursor: "pointer",
               fontWeight: "bold",
               fontFamily: '"Courier Prime", "Courier New", monospace',
-              fontSize "16px",
+              fontSize: "16px",
             }}
           >
             Miau
