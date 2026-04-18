@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function PisicaPage() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
-    { from: "cat", text: "Miau. Întreabă-mă orice 🐾" },
+    { from: "cat", text: "Miau. Întreabă-mă orice și vă răspund la ce știu." },
   ]);
 
   const answers = [
@@ -29,12 +29,12 @@ export default function PisicaPage() {
     {
       keywords: ["persoane", "câți", "cati"],
       answer:
-        "Vine exact cine ne dorim. Cool, funny, sportivi și nesportivi.",
+        "Vine exact cine ne dorim noi trei, Andreiana, Cezar si cu mine. Cool, funny, sportivi și nesportivi.",
     },
     {
       keywords: ["muzica", "muzică"],
       answer:
-        "Am ales-o noi doi, începe din secolul 19 până în 2026. Și o surpriză. Nu, nu cântă Cezar. Altceva!",
+        "Au ales-o ei doi, Andreiana si Cezar, începe din secolul 19 până în 2026. Și o surpriză. Nu, nu cântă Cezar. Altceva! Hihi",
     },
     {
       keywords: ["tenis", "juca", "racheta"],
@@ -52,7 +52,7 @@ export default function PisicaPage() {
     {
       keywords: ["flori", "cadouri", "trandafir"],
       answer:
-        "Un singur trandafir. Avem vazele pregătite. One flower, one vase! Vezi IMPORTANT.",
+        "Un singur trandafir. Avem vazele pregătite. One flower, one vase! Vezi la sectiunea IMPORTANT.",
     },
     {
       keywords: ["rsvp", "confirm", "confirmare"],
@@ -78,7 +78,7 @@ export default function PisicaPage() {
       }
     }
 
-    return "Miau… nu știu exact, dar întreabă din nou sau vorbește cu Andreiana ori Cezar, mai ales cu Cezar.";
+    return "Miau… nu știu exact, dar întreabă din nou sau vorbește cu Andreiana ori Cezar, mai ales cu Cezar. Muhuhaha";
   };
 
   const sendMessage = () => {
@@ -188,10 +188,11 @@ export default function PisicaPage() {
             textAlign: "center",
             lineHeight: "1.8",
             fontSize: "0.98rem",
+            color: "#1bb76e",
           }}
         >
           Andreiana:{" "}
-          <a href="tel:0722650221" style={{ color: "#111" }}>
+          <a href="tel:0722650221" style={{ color: "#1bb76e" }}>
             0722650221
           </a>{" "}
           /{" "}
@@ -199,13 +200,13 @@ export default function PisicaPage() {
             href="https://wa.me/40722650221"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "#111" }}
+            style={{ color: "#1bb76e" }}
           >
             WhatsApp
           </a>
           <br />
           Cezar:{" "}
-          <a href="tel:0722545082" style={{ color: "#111" }}>
+          <a href="tel:0722545082" style={{ color: "#1bb76e" }}>
             0722545082
           </a>{" "}
           /{" "}
@@ -213,7 +214,7 @@ export default function PisicaPage() {
             href="https://wa.me/40722545082"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "#111" }}
+            style={{ color: "#1bb76e" }}
           >
             WhatsApp
           </a>
