@@ -24,7 +24,7 @@ export default function PisicaPage() {
     },
     {
       keywords: ["cât ține", "cat tine"],
-      answer: "Cât ne ține trupul, dar și capul.",
+      answer: "Cât ne ține trupul, dar și capul 😏",
     },
     {
       keywords: ["persoane", "câți", "cati"],
@@ -34,7 +34,7 @@ export default function PisicaPage() {
     {
       keywords: ["muzica", "muzică"],
       answer:
-        "Am ales-o noi doi, începe din secolul 19 până în 2026. Și o surpriză. Nu, nu cântă Cezar. Altceva! 🎶",
+        "Am ales-o noi doi, începe din secolul 19 până în 2026. Și o surpriză. Nu, nu cântă Cezar. Altceva!",
     },
     {
       keywords: ["tenis", "juca", "racheta"],
@@ -42,17 +42,17 @@ export default function PisicaPage() {
     },
     {
       keywords: ["martori", "martorii"],
-      answer: "Ildikó și Mandea/Șerban 💫",
+      answer: "Ildikó și Mandea/Șerban",
     },
     {
       keywords: ["dress", "cod", "ținută", "tinuta"],
       answer:
-        "Ziua: mai formal, ca la o ceremonie religioasă, I guess, miau. Seara: pantofi sport sau comozi, fara toc pentru ca e iarba & haine colorate – pas noir 👟",
+        "Ziua: mai formal, ca la o ceremonie religioasă, I guess, miau. Seara: pantofi sport & haine colorate – pas noir 👟👟",
     },
     {
       keywords: ["flori", "cadouri", "trandafir"],
       answer:
-        "Un singur trandafir. Avem vazele pregătite. One flower, one vase! Vezi sectiunea IMPORTANT.",
+        "Un singur trandafir. Avem vazele pregătite. One flower, one vase! Vezi IMPORTANT.",
     },
     {
       keywords: ["rsvp", "confirm", "confirmare"],
@@ -60,11 +60,12 @@ export default function PisicaPage() {
     },
     {
       keywords: ["plus", "+1"],
-      answer: "Da, se poate, dar menționează la RSVP",
+      answer: "Da, se poate, dar menționează la RSVP, pls",
     },
     {
       keywords: ["telefon", "număr", "numar", "whatsapp", "sună", "suna", "contact"],
-      answer: "WhatsApp sau sună-ne folosind butoanele din dreapta jos 💚",
+      answer:
+        "Andreiana: 0722650221. Cezar: 0722545082. WhatsApp sau sunați.",
     },
   ];
 
@@ -99,8 +100,7 @@ export default function PisicaPage() {
         fontFamily: '"Courier Prime", "Courier New", monospace',
       }}
     >
-      <div style={{ maxWidth: "600px", margin: "0 auto", paddingBottom: "120px" }}>
-        
+      <div style={{ maxWidth: "600px", margin: "0 auto" }}>
         <h1
           style={{
             textAlign: "center",
@@ -129,16 +129,8 @@ export default function PisicaPage() {
                 display: "flex",
                 justifyContent: msg.from === "user" ? "flex-end" : "flex-start",
                 marginBottom: "10px",
-                alignItems: "flex-end",
-                gap: "8px",
               }}
             >
-              {msg.from === "cat" && (
-                <span style={{ fontSize: "22px", color: "#5dade2" }}>
-                  🐱
-                </span>
-              )}
-
               <span
                 style={{
                   display: "inline-block",
@@ -183,78 +175,49 @@ export default function PisicaPage() {
               borderRadius: "10px",
               cursor: "pointer",
               fontWeight: "bold",
+              fontFamily: '"Courier Prime", "Courier New", monospace',
             }}
           >
             Miau
           </button>
         </div>
-      </div>
 
-      {/* FLOATING BUTTONS */}
-      <div
-        style={{
-          position: "fixed",
-          right: "18px",
-          bottom: "18px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "10px",
-          zIndex: 999,
-        }}
-      >
-        <a href="https://wa.me/40722650221" target="_blank"
+        <div
           style={{
-            backgroundColor: "#25D366",
-            color: "white",
-            padding: "12px 16px",
-            borderRadius: "999px",
-            textDecoration: "none",
-            fontWeight: "bold",
+            marginTop: "28px",
+            textAlign: "center",
+            lineHeight: "1.8",
+            fontSize: "0.98rem",
           }}
         >
-          WhatsApp Andreiana
-        </a>
-
-        <a href="https://wa.me/40722545082" target="_blank"
-          style={{
-            backgroundColor: "#25D366",
-            color: "white",
-            padding: "12px 16px",
-            borderRadius: "999px",
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
-        >
-          WhatsApp Cezar
-        </a>
-
-        <a href="tel:0722650221"
-          style={{
-            backgroundColor: "white",
-            color: "#111",
-            padding: "12px 16px",
-            borderRadius: "999px",
-            textDecoration: "none",
-            border: "1px solid #111",
-            fontWeight: "bold",
-          }}
-        >
-          Sună Andreiana
-        </a>
-
-        <a href="tel:0722545082"
-          style={{
-            backgroundColor: "white",
-            color: "#111",
-            padding: "12px 16px",
-            borderRadius: "999px",
-            textDecoration: "none",
-            border: "1px solid #111",
-            fontWeight: "bold",
-          }}
-        >
-          Sună Cezar
-        </a>
+          Andreiana:{" "}
+          <a href="tel:0722650221" style={{ color: "#111" }}>
+            0722650221
+          </a>{" "}
+          /{" "}
+          <a
+            href="https://wa.me/40722650221"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#111" }}
+          >
+            WhatsApp
+          </a>
+          <br />
+          Cezar:{" "}
+          <a href="tel:0722545082" style={{ color: "#111" }}>
+            0722545082
+          </a>{" "}
+          /{" "}
+          <a
+            href="https://wa.me/40722545082"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#111" }}
+          >
+            WhatsApp
+          </a>
+        </div>
       </div>
     </main>
   );
