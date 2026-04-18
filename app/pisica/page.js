@@ -15,11 +15,11 @@ export default function PisicaPage() {
     },
      {
       keywords: ["cine", "esti", "tu", "pisica", "ceapcici"],
-      answer: "Sunt Ceapcici, sau Gria, sau pisica cu o mie de nume)",
+      answer: "Sunt Ceapcici, sau Gria, sau pisica cu o mie de nume",
     },
     {
       keywords: ["ceremonia", "oră", "ora", "cind", "cand"],
-      answer: "Ora 12:50 (nu întârzia, pisica vă vede 👀)",
+      answer: "Ora 12:50 ceremonia (nu întârzia, pisica vă vede 👀), petrecerea la ora 19:00",
     },
     {
       keywords: ["petrecerea", "locație", "locatie", "unde", "petrecere cand"],
@@ -38,7 +38,7 @@ export default function PisicaPage() {
     {
       keywords: ["muzica", "muzică"],
       answer:
-        "Au ales-o ei doi, Andreiana si Cezar, începe din secolul 19 până în 2026. Și o surpriză. Nu, nu cântă Cezar. Altceva! Hihi",
+        "Au ales-o ei doi, Andreiana si Cezar, începe din secolul 19 până în 2026. Și o surpriză. Nu, nu cântă Cezar.",
     },
     {
       keywords: ["tenis", "juca", "racheta"],
@@ -51,7 +51,7 @@ export default function PisicaPage() {
     {
       keywords: ["dress", "cod", "ținută", "tinuta", "imbrac", "haine"],
       answer:
-        "Ziua: mai formal, ca la o ceremonie religioasă, I guess, miau. Seara: pantofi sport & haine colorate – pas noir 👟👟",
+        "Ziua: mai formal, ca la o ceremonie religioasă, I guess. Seara: pantofi sport & haine colorate – pas noir 👟👟",
     },
     {
       keywords: ["flori", "cadouri", "trandafir"],
@@ -82,7 +82,7 @@ export default function PisicaPage() {
       }
     }
 
-    return "Miau… nu știu exact, dar citește invitatia sau vorbește cu Andreiana ori Cezar, dar mai ales cu Cezar. Grrrr, roarrr, hisss, purrr ";
+    return "Miau… nu știu, dar vezi invitatia sau vorbește cu Andreiana ori Cezar, mai ales cu Cezar. Purrr ";
   };
 
   const sendMessage = () => {
