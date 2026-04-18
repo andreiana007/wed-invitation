@@ -1,44 +1,82 @@
 "use client";
-
 import { useState } from "react";
 
 export default function PisicaPage() {
-  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  const [messages, setMessages] = useState([
+    { from: "cat", text: "Miau. Întreabă-mă orice 🐾" },
+  ]);
+
+  const answers = [
+    {
+      keywords: ["biserica", "catedrala"],
+      answer:
+        "Catedrala romano-catolică Sfântul Iosif, Strada General Berthelot 19, București.",
+    },
+    {
+      keywords: ["ceremonia", "ora"],
+      answer: "Ora 12:50 (nu întârzia, pisica vă vede 👀)",
+    },
+    {
+      keywords: ["petrecerea", "locatie", "unde"],
+      answer:
+        "La Terenuri – Ramada Plaza, București. Lângă terenurile de tenis, în spate. Vezi pinul de pe hartă.",
+    },
+    {
+      keywords: ["cat tine"],
+      answer: "Cât ne ține trupul, dar și capul 😏",
+    },
+    {
+      keywords: ["persoane", "cati"],
+      answer:
+        "Vine exact cine ne dorim. Cool, funny, sportivi și nesportivi.",
+    },
+    {
+      keywords: ["muzica"],
+      answer:
+        "Am ales-o noi doi, începe din secolul 19 până în 2026. Și o surpriză. Nu, nu cântă Cezar. Altceva! 🎶",
+    },
+    {
+      keywords: ["martori"],
+      answer: "Ildikó și Mandea/Șerban 💫",
+    },
+    {
+      keywords: ["dress", "cod"],
+      answer:
+        "Ziua: mai formal, ca la o ceremonie religioasă, I guess, miau. Seara: pantofi sport & haine colorate – pas noir 👟",
+    },
+    {
+      keywords: ["flori", "cadouri"],
+      answer:
+        "Un singur trandafir. Avem vazele pregătite. One flower, one vase! Vezi IMPORTANT.",
+    },
+    {
+      keywords: ["rsvp", "confirm"],
+      answer: "Confirmă prin formularul RSVP din site.",
+    },
+    {
+      keywords: ["plus", "+1"],
+      answer: "Da, se poate, dar menționează la RSVP 🙏",
+    },
+  ];
 
   const getAnswer = (text) => {
     const lower = text.toLowerCase();
-
-    if (lower.includes("unde") || lower.includes("loc")) {
-      return "La Hotel Ramada Plaza, la terenurile de tenis.";
+    for (let item of answers) {
+      if (item.keywords.some((k) => lower.includes(k))) {
+        return item.answer;
+      }
     }
-
-    if (lower.includes("martori")) {
-      return "Ildikó și Șerban (Mandea).";
-    }
-
-    if (lower.includes("ora") || lower.includes("când") || lower.includes("cand")) {
-      return "Ora 19:00 🐾";
-    }
-
-    if (lower.includes("cadou")) {
-      return "Prezența voastră este cel mai frumos cadou.";
-    }
-
-    if (lower.includes("salut") || lower.includes("hello") || lower.includes("buna") || lower.includes("bună")) {
-      return "Miau! 🐾";
-    }
-
-    return "Miau... pentru alte detalii, verificați invitația sau sunați-ne.";
+    return "Miau… nu știu exact 😼 dar întreabă din nou sau vorbește cu Cezar.";
   };
 
   const sendMessage = () => {
     if (!input.trim()) return;
 
-    const userMsg = { text: input, from: "user" };
-    const catMsg = { text: getAnswer(input), from: "cat" };
+    const userMessage = { from: "user", text: input };
+    const catReply = { from: "cat", text: getAnswer(input) };
 
-    setMessages((prev) => [...prev, userMsg, catMsg]);
+    setMessages([...messages, userMessage, catReply]);
     setInput("");
   };
 
@@ -46,45 +84,24 @@ export default function PisicaPage() {
     <main
       style={{
         minHeight: "100vh",
-        background: "#f4f4fc",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        backgroundColor: "#dff3ff",
         padding: "20px",
-        fontFamily: "Courier Prime, Courier, monospace",
+        fontFamily: '"Courier Prime", "Courier New", monospace',
       }}
     >
-      <div
-        style={{
-          width: "100%",
-          maxWidth: "430px",
-          background: "rgba(255,255,255,0.95)",
-          borderRadius: "28px",
-          padding: "22px",
-          boxShadow: "0 12px 40px rgba(0,0,0,0.08)",
-          display: "flex",
-          flexDirection: "column",
-          height: "80vh",
-        }}
-      >
-        <div style={{ textAlign: "center", marginBottom: "14px" }}>
-      
-          <h1
-            style={{
-              margin: 0,
-              color: "#4f9b6f",
-              fontSize: "28px",
-            }}
-          >
-            Pisica va răspunde
-          </h1>
-        </div>
+      <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+        <h1 style={{ textAlign: "center", marginBottom: "20px" }}>
+          Pisica va răspunde 🐾
+        </h1>
 
         <div
           style={{
-            flex: 1,
+            border: "1px solid #111",
+            borderRadius: "15px",
+            padding: "15px",
+            height: "420px",
             overflowY: "auto",
-            padding: "10px 4px",
+            background: "white",
           }}
         >
           {messages.map((msg, i) => (
@@ -92,76 +109,69 @@ export default function PisicaPage() {
               key={i}
               style={{
                 display: "flex",
-                justifyContent: msg.from === "user" ? "flex-end" : "flex-start",
+                justifyContent:
+                  msg.from === "user" ? "flex-end" : "flex-start",
                 marginBottom: "10px",
+                alignItems: "flex-end",
+                gap: "8px",
               }}
             >
-              <div
+              {msg.from === "cat" && (
+                <img
+                  src="/cat-grey.png"
+                  alt="cat"
+                  style={{
+                    width: "28px",
+                    height: "28px",
+                    borderRadius: "50%",
+                  }}
+                />
+              )}
+
+              <span
                 style={{
+                  display: "inline-block",
+                  padding: "10px",
+                  borderRadius: "10px",
+                  background:
+                    msg.from === "user" ? "#ff2e8b" : "#eee",
+                  color: msg.from === "user" ? "white" : "black",
                   maxWidth: "75%",
-                  padding: "10px 14px",
-                  borderRadius: "18px",
-                  background: msg.from === "user" ? "#b94b6b" : "#f1f1f1",
-                  color: msg.from === "user" ? "white" : "#333",
-                  fontSize: "14px",
-                  lineHeight: 1.4,
                 }}
               >
                 {msg.text}
-              </div>
+              </span>
             </div>
           ))}
         </div>
 
-        <div style={{ display: "flex", gap: "8px", marginTop: "8px" }}>
+        <div style={{ display: "flex", marginTop: "10px", gap: "10px" }}>
           <input
-            type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Scrie..."
+            placeholder="Scrie întrebarea..."
             style={{
               flex: 1,
-              padding: "12px",
-              borderRadius: "12px",
-              border: "1px solid #ddd",
-              fontFamily: "inherit",
+              padding: "10px",
+              borderRadius: "10px",
+              border: "1px solid #111",
             }}
           />
+
           <button
             onClick={sendMessage}
             style={{
-              padding: "12px 16px",
-              borderRadius: "12px",
-              border: "none",
-              background: "#5aa67a",
+              backgroundColor: "#ff2e8b",
               color: "white",
+              border: "none",
+              padding: "10px 15px",
+              borderRadius: "10px",
               cursor: "pointer",
-              fontFamily: "inherit",
+              fontWeight: "bold",
             }}
           >
-            →
+            Miau
           </button>
-        </div>
-
-        <div
-          style={{
-            marginTop: "16px",
-            paddingTop: "14px",
-            borderTop: "1px solid #eee",
-            textAlign: "center",
-            fontSize: "13px",
-            color: "#777",
-            lineHeight: 1.7,
-          }}
-        >
-          <div>Pentru orice altceva:</div>
-          <a href="tel:+40722545082" style={{ color: "#b94b6b", textDecoration: "none" }}>
-            Cezar · 0722 545 082
-          </a>
-          <br />
-          <a href="tel:+40722650221" style={{ color: "#b94b6b", textDecoration: "none" }}>
-            Andreiana · 0722 650 221
-          </a>
         </div>
       </div>
     </main>
