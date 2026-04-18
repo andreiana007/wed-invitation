@@ -9,18 +9,18 @@ export default function PisicaPage() {
 
   const answers = [
     {
-      keywords: ["biserica", "catedrala"],
+      keywords: ["biserica", "catedrala", "unde", "ceremonie"],
       answer:
         "Catedrala romano-catolică Sfântul Iosif, Strada General Berthelot 19, București.",
     },
     {
-      keywords: ["ceremonia", "oră", "ora"],
+      keywords: ["ceremonia", "oră", "ora", "cind", "cand"],
       answer: "Ora 12:50 (nu întârzia, pisica vă vede 👀)",
     },
     {
-      keywords: ["petrecerea", "locație", "locatie", "unde"],
+      keywords: ["petrecerea", "locație", "locatie", "unde", "petrecere cand"],
       answer:
-        "La Terenuri – Ramada Plaza, București. Lângă terenurile de tenis, în spate. Vezi pinul de pe hartă.",
+        "La Terenuri – Ramada Plaza, București. Lângă terenurile de tenis, în spate. Vezi pinul de pe hartă. La ora 19.00.",
     },
     {
       keywords: ["cât ține", "cat tine"],
@@ -45,7 +45,7 @@ export default function PisicaPage() {
       answer: "Ildikó și Mandea/Șerban",
     },
     {
-      keywords: ["dress", "cod", "ținută", "tinuta"],
+      keywords: ["dress", "cod", "ținută", "tinuta", "imbrac", "haine"],
       answer:
         "Ziua: mai formal, ca la o ceremonie religioasă, I guess, miau. Seara: pantofi sport & haine colorate – pas noir 👟👟",
     },
@@ -59,7 +59,7 @@ export default function PisicaPage() {
       answer: "Confirmă prin formularul RSVP din site.",
     },
     {
-      keywords: ["plus", "+1"],
+      keywords: ["plus", "+1", "posibil"],
       answer: "Da, se poate, dar menționează la RSVP, pls",
     },
     {
