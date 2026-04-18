@@ -11,7 +11,7 @@ export default function PisicaPage() {
     {
       keywords: ["biserica", "catedrala", "unde", "ceremonie"],
       answer:
-        "Catedrala romano-catolică Sfântul Iosif, Strada General Berthelot 19, București.",
+        "Ceremonia la Catedrala romano-catolică Sfântul Iosif, Str. General Berthelot 19, București. Petrecerea la Ramada Plaza, Bdv. Poligrafiei 3-5, langa terenurile de tenis.",
     },
      {
       keywords: ["cine", "esti", "tu", "pisica", "ceapcici"],
@@ -24,7 +24,7 @@ export default function PisicaPage() {
     {
       keywords: ["petrecerea", "locație", "locatie", "unde", "petrecere cand"],
       answer:
-        "La Terenuri – Ramada Plaza, București. Lângă terenurile de tenis, în spate. Vezi pinul de pe hartă. La ora 19.00.",
+        "Ramada Plaza, București, bd. Poligrafiei 3-5. Lângă terenurile de tenis, în spate. Vezi pinul de pe hartă. La ora 19.00.",
     },
     {
       keywords: ["cât ține", "cat tine"],
