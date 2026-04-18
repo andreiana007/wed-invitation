@@ -13,6 +13,10 @@ export default function PisicaPage() {
       answer:
         "Catedrala romano-catolică Sfântul Iosif, Strada General Berthelot 19, București.",
     },
+     {
+      keywords: ["cine", "esti", "tu", "pisica", "ceapcici"],
+      answer: "Sunt Ceapcici, sau Gria, sau pisica cu o mie de nume)",
+    },
     {
       keywords: ["ceremonia", "oră", "ora", "cind", "cand"],
       answer: "Ora 12:50 (nu întârzia, pisica vă vede 👀)",
