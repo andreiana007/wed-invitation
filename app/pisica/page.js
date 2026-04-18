@@ -78,7 +78,7 @@ export default function PisicaPage() {
       }
     }
 
-    return "Miau… nu știu exact, dar întreabă din nou sau vorbește cu Andreiana ori Cezar, mai ales cu Cezar. Muhuhaha";
+    return "Miau… nu știu exact, dar citește invitatia sau vorbește cu Andreiana ori Cezar, dar mai ales cu Cezar. Grrrr, roarrr, hisss, purrr ";
   };
 
   const sendMessage = () => {
