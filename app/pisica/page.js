@@ -58,23 +58,61 @@ export default function PisicaPage() {
       keywords: ["plus", "+1"],
       answer: "Da, se poate, dar menționează la RSVP 🙏",
     },
+    {
+      keywords: ["contact", "telefon", "numar", "whatsapp", "sun"],
+      answer: "contact",
+    },
   ];
 
   const getAnswer = (text) => {
     const lower = text.toLowerCase();
+
     for (let item of answers) {
       if (item.keywords.some((k) => lower.includes(k))) {
         return item.answer;
       }
     }
-    return "Miau… nu știu exact 😼 dar întreabă din nou sau vorbește cu Cezar.";
+
+    return "Miau… nu știu exact 😼 dar întreabă din nou sau scrie-ne direct.";
   };
 
   const sendMessage = () => {
     if (!input.trim()) return;
 
     const userMessage = { from: "user", text: input };
-    const catReply = { from: "cat", text: getAnswer(input) };
+
+    let replyText = getAnswer(input);
+
+    let catReply;
+
+    if (replyText === "contact") {
+      catReply = {
+        from: "cat",
+        jsx: (
+          <div>
+            Scrie sau sună:
+            <br />
+            Andreiana:{" "}
+            <a href="tel:0722650221">0722650221</a>{" "}
+            /{" "}
+            <a href="https://wa.me/40722650221" target="_blank">
+              WhatsApp
+            </a>
+            <br />
+            Cezar:{" "}
+            <a href="tel:0722545082">0722545082</a>{" "}
+            /{" "}
+            <a href="https://wa.me/40722545082" target="_blank">
+              WhatsApp
+            </a>
+            <br />
+            Pisica răspunde mai greu la telefon 😼
+          </div>
+        ),
+      };
+    } else {
+      catReply = { from: "cat", text: replyText };
+    }
 
     setMessages([...messages, userMessage, catReply]);
     setInput("");
@@ -117,15 +155,7 @@ export default function PisicaPage() {
               }}
             >
               {msg.from === "cat" && (
-                <img
-                  src="/cat-grey.png"
-                  alt="cat"
-                  style={{
-                    width: "28px",
-                    height: "28px",
-                    borderRadius: "50%",
-                  }}
-                />
+                <span style={{ fontSize: "22px" }}>🐈‍⬛</span>
               )}
 
               <span
@@ -137,9 +167,10 @@ export default function PisicaPage() {
                     msg.from === "user" ? "#ff2e8b" : "#eee",
                   color: msg.from === "user" ? "white" : "black",
                   maxWidth: "75%",
+                  whiteSpace: "pre-line",
                 }}
               >
-                {msg.text}
+                {msg.jsx ? msg.jsx : msg.text}
               </span>
             </div>
           ))}
