@@ -18,7 +18,7 @@ export default function PisicaPage() {
       answer: "Sunt Ceapcici, sau Gria, sau pisica cu o mie de nume",
     },
     {
-      keywords: ["ceremonia", "oră", "ora", "cind", "cand"],
+      keywords: ["ceremonia", "oră", "ora", "cind", "cand", "la", "ce"],
       answer: "Ora 12:50 ceremonia (nu întârzia, pisica vă vede 👀), petrecerea la ora 19:00",
     },
     {
@@ -41,7 +41,7 @@ export default function PisicaPage() {
         "Au ales-o ei doi, Andreiana si Cezar, începe din secolul 19 până în 2026. Și o surpriză. Nu, nu cântă Cezar.",
     },
     {
-      keywords: ["tenis", "juca", "racheta"],
+      keywords: ["tenis", "juca", "racheta", "jucam"],
       answer: "Da, se poate juca tenis sau ceva cu tenis. Aduceți-vă racheta 🎾",
     },
     {
@@ -49,7 +49,7 @@ export default function PisicaPage() {
       answer: "Ildikó și Mandea/Șerban",
     },
     {
-      keywords: ["dress", "cod", "ținută", "tinuta", "imbrac", "haine"],
+      keywords: ["dress", "cod", "ținută", "tinuta", "imbrac", "haine", "imbracaminte"],
       answer:
         "Ziua: mai formal, ca la o ceremonie religioasă, I guess. Seara: pantofi sport & haine colorate – pas noir 👟👟",
     },
@@ -60,7 +60,7 @@ export default function PisicaPage() {
     },
     {
       keywords: ["rsvp", "confirm", "confirmare"],
-      answer: "Confirmă prin formularul RSVP din site.",
+      answer: "Confirmă prin formularul RSVP din aplicatie, te rog.",
     },
     {
       keywords: ["plus", "+1", "posibil"],
